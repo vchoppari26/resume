@@ -1,0 +1,480 @@
+/* Reset default spacing and box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General page styling */
+body {
+  background: #f4f6fb;
+  color: #1f2937;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Shared width wrapper */
+.container {
+  width: 88%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* Sticky top navigation */
+.site-header {
+  background: #0f172a;
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navigation layout */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Brand text */
+.brand {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Nav links list */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* Link states */
+.nav-links a:link,
+.nav-links a:visited {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: #93c5fd;
+}
+
+.nav-links a:active {
+  color: #60a5fa;
+}
+
+/* Hero section spacing */
+.hero-section {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #ffffff;
+  padding: 90px 0 70px 0;
+}
+
+/* Hero layout */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Hero small label */
+.hero-label {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #93c5fd;
+  margin-bottom: 12px;
+}
+
+/* Hero title */
+.hero-text h1 {
+  font-size: 52px;
+  margin-bottom: 14px;
+}
+
+/* Hero subtitle */
+.hero-text h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  color: #dbeafe;
+}
+
+/* Hero description paragraph */
+.hero-description {
+  margin-bottom: 25px;
+  max-width: 700px;
+  color: #e5e7eb;
+}
+
+/* Hero buttons row */
+.hero-buttons {
+  margin-bottom: 28px;
+}
+
+/* Primary button */
+.primary-btn {
+  display: inline-block;
+  background: #3b82f6;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  margin-right: 12px;
+  font-weight: bold;
+}
+
+.primary-btn:hover {
+  background: #2563eb;
+}
+
+/* Secondary button */
+.secondary-btn {
+  display: inline-block;
+  border: 2px solid #93c5fd;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Hero contact info */
+.hero-contact p {
+  margin-bottom: 8px;
+  color: #e5e7eb;
+}
+
+.hero-contact a:link,
+.hero-contact a:visited {
+  color: #bfdbfe;
+  text-decoration: none;
+}
+
+.hero-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Profile image wrapper */
+.hero-image-wrapper {
+  text-align: center;
+}
+
+/* Profile image styling */
+.hero-image {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Shared section spacing */
+.content-section {
+  padding: 75px 0;
+}
+
+/* Alternate light section */
+.alt-section {
+  background: #eaf0f9;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 34px;
+  margin-bottom: 26px;
+  color: #0f172a;
+}
+
+/* Basic card block */
+.content-card,
+.timeline-card,
+.skills-card,
+.cert-card,
+.contact-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  margin-bottom: 20px;
+}
+
+/* Subtext inside cards */
+.subtext {
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+/* Stats grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Each stat card */
+.stat-card {
+  background: #ffffff;
+  padding: 28px 20px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.stat-card h3 {
+  font-size: 28px;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+/* Section note text */
+.section-note {
+  margin-bottom: 24px;
+  color: #475569;
+}
+
+/* Flip cards layout */
+.flip-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* Each flip card area */
+.flip-card {
+  perspective: 1200px;
+}
+
+/* Hidden checkbox for click-to-flip */
+.flip-toggle {
+  display: none;
+}
+
+/* Card shell */
+.flip-card-inner {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 340px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+  cursor: pointer;
+}
+
+/* Flip on click */
+.flip-toggle:checked + .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and back common styling */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  min-height: 340px;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  padding: 26px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1);
+}
+
+/* Front side */
+.flip-card-front {
+  background: #ffffff;
+  color: #111827;
+}
+
+/* Back side */
+.flip-card-back {
+  background: #0f172a;
+  color: #f8fafc;
+  transform: rotateY(180deg);
+}
+
+/* Experience card tag */
+.card-tag {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+/* Company name on front */
+.company-name {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* Hint text */
+.flip-hint {
+  display: inline-block;
+  margin-top: 18px;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Back card list spacing */
+.flip-card-back ul {
+  margin-left: 18px;
+  margin-top: 14px;
+  margin-bottom: 18px;
+}
+
+.flip-card-back li {
+  margin-bottom: 10px;
+}
+
+/* Tools used text */
+.tools-used {
+  font-size: 15px;
+  color: #cbd5e1;
+}
+
+/* Skills layout */
+.skills-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Skills list spacing */
+.skills-card ul {
+  margin-left: 18px;
+}
+
+.skills-card li {
+  margin-bottom: 8px;
+}
+
+/* Certification grid */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Certification title */
+.cert-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Contact links */
+.contact-card a:link,
+.contact-card a:visited {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.site-footer {
+  background: #0f172a;
+  color: #ffffff;
+  text-align: center;
+  padding: 24px 0;
+}
+
+/* Responsive layout */
+@media (max-width: 992px) {
+  .hero-grid,
+  .stats-grid,
+  .flip-grid,
+  .skills-layout,
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-text h2 {
+    font-size: 21px;
+  }
+
+  .hero-image {
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .flip-card-inner,
+  .flip-card-front,
+  .flip-card-back {
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 92%;
+  }
+
+  .hero-section {
+    padding: 70px 0 55px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    margin-bottom: 12px;
+  }
+
+  .hero-image {
+    width: 220px;
+    height: 220px;
+  }
+}
+/* Smooth transitions for better UX */
+* {
+  transition: all 0.3s ease;
+}
+/* Elevation effect for all cards */
+.content-card:hover,
+.timeline-card:hover,
+.skills-card:hover,
+.cert-card:hover,
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+/* Slight zoom when hovering flip cards */
+.flip-card-inner:hover {
+  transform: scale(1.02);
+}
+/* Headings highlight */
+h3:hover {
+  color: #2563eb;
+  font-weight: 700;
+}

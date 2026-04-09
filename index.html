@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic page setup -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varsha Choppari | Portfolio v2</title>
+
+  <!-- Link to custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top navigation -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <div class="brand">Varsha Choppari</div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero section with profile photo -->
+  <section id="hero" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="hero-label">Software Developer</p>
+        <h1>Hi, I'm Varsha Choppari</h1>
+        <h2>Building practical, user-focused applications across frontend, backend, and data systems.</h2>
+
+        <p class="hero-description">
+          I’m a software developer based in Little Rock, Arkansas, with experience in web development,
+          dashboards, analytics, and cloud-based tools. I enjoy solving real business problems and building
+          interfaces that make systems easier to use.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="primary-btn">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <img src="image/profile.jpeg" alt="Portrait of Varsha Choppari" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional summary -->
+  <section id="summary" class="content-section">
+    <div class="container">
+      <h2 class="section-title">Professional Summary</h2>
+      <div class="content-card">
+        <p>
+          I am a software developer who enjoys building practical, reliable, and user-friendly tools that improve
+          day-to-day workflows for teams. My experience spans frontend development, backend support, data reporting,
+          and dashboard systems.
+        </p>
+        <p>
+          I work with technologies such as Next.js, Node.js, JavaScript, SQL, AWS, and Amazon QuickSight. I enjoy
+          improving usability, validating data accuracy, and collaborating with others to turn ideas into meaningful,
+          working solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick highlight stats -->
+  <section class="content-section alt-section">
+    <div class="container">
+      <h2 class="section-title">Highlights</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h3>2+</h3>
+          <p>Professional software roles</p>
+        </div>
+        <div class="stat-card">
+          <h3>Frontend + Backend</h3>
+          <p>Hands-on development experience</p>
+        </div>
+        <div class="stat-card">
+          <h3>Cloud + Analytics</h3>
+          <p>AWS and dashboard exposure</p>
+        </div>
+        <div class="stat-card">
+          <h3>Multiple Certifications</h3>
+          <p>Web, cloud, AI, and data learning</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience section with click flip cards -->
+  <section id="experience" class="content-section">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-note">Click a card to flip and read the experience details.</p>
+
+      <div class="flip-grid">
+        <!-- Card 1 -->
+        <div class="flip-card">
+          <input type="checkbox" id="card1" class="flip-toggle">
+          <label for="card1" class="flip-card-inner">
+            <div class="flip-card-front">
+              <p class="card-tag">Current Role</p>
+              <h3>Software Developer</h3>
+              <p class="company-name">Crain Automotive Holdings, LLC</p>
+              <p>Aug 2025 - Present</p>
+              <p>Little Rock, Arkansas</p>
+              <span class="flip-hint">Click to view details</span>
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Crain Automotive</h3>
+              <ul>
+                <li>Contributing to CrainVision, an internal enterprise analytics platform.</li>
+                <li>Building and enhancing React and Next.js components for dashboards and workflows.</li>
+                <li>Supporting backend systems using Node.js and PostgreSQL (RDS).</li>
+                <li>Working with AWS services such as EC2, S3, RDS, IAM, and QuickSight.</li>
+                <li>Testing features across multiple roles and dealership use cases.</li>
+              </ul>
+              <p class="tools-used"><strong>Tools:</strong> Next.js, Node.js, PostgreSQL, AWS, QuickSight</p>
+            </div>
+          </label>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flip-card">
+          <input type="checkbox" id="card2" class="flip-toggle">
+          <label for="card2" class="flip-card-inner">
+            <div class="flip-card-front">
+              <p class="card-tag">Remote Role</p>
+              <h3>Software Developer</h3>
+              <p class="company-name">HEXANIKA</p>
+              <p>Oct 2024 - Aug 2025</p>
+              <p>New York, United States · Remote</p>
+              <span class="flip-hint">Click to view details</span>
+            </div>
+
+            <div class="flip-card-back">
+              <h3>HEXANIKA</h3>
+              <ul>
+                <li>Worked hands-on with Next.js, Node.js, and Vercel.</li>
+                <li>Contributed to the development of a mental health application.</li>
+                <li>Focused on UI changes, component fixes, layout improvements, and responsive interfaces.</li>
+                <li>Assisted with backend integration and deployments.</li>
+                <li>Collaborated with the team to deliver practical product improvements.</li>
+              </ul>
+              <p class="tools-used"><strong>Tools:</strong> Next.js, Node.js, Vercel, React, UI Development</p>
+            </div>
+          </label>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flip-card">
+          <input type="checkbox" id="card3" class="flip-toggle">
+          <label for="card3" class="flip-card-inner">
+            <div class="flip-card-front">
+              <p class="card-tag">Internship</p>
+              <h3>Business Intelligence Intern</h3>
+              <p class="company-name">HEXANIKA</p>
+              <p>Jul 2024 - Sep 2024</p>
+              <p>Business Analysis and Product Documentation</p>
+              <span class="flip-hint">Click to view details</span>
+            </div>
+
+            <div class="flip-card-back">
+              <h3>HEXANIKA Internship</h3>
+              <ul>
+                <li>Created BRDs, functional documents, and architecture workflows.</li>
+                <li>Improved communication between product and engineering teams.</li>
+                <li>Helped shape product clarity and requirement accuracy across modules.</li>
+                <li>Supported product direction through structured analysis and documentation.</li>
+              </ul>
+              <p class="tools-used"><strong>Focus:</strong> BRDs, Functional Docs, Product Analysis, Workflows</p>
+            </div>
+          </label>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="flip-card">
+          <input type="checkbox" id="card4" class="flip-toggle">
+          <label for="card4" class="flip-card-inner">
+            <div class="flip-card-front">
+              <p class="card-tag">Earlier Roles</p>
+              <h3>Additional Experience</h3>
+              <p class="company-name">UALR · Barnes & Noble · Skill Safari</p>
+              <p>2020 - 2024</p>
+              <p>Academic support, inventory, and frontend workshop exposure</p>
+              <span class="flip-hint">Click to view details</span>
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Other Experience</h3>
+              <ul>
+                <li>Extra Help Assistant at University of Arkansas at Little Rock.</li>
+                <li>Inventory Associate at Barnes & Noble Bookstore.</li>
+                <li>Frontend Developer Workshop experience at Skill Safari.</li>
+                <li>Built early exposure to communication, organization, and practical technical learning.</li>
+              </ul>
+              <p class="tools-used"><strong>Strengths:</strong> Teamwork, Learning, Adaptability, Frontend Basics</p>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="content-section alt-section">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+
+      <div class="timeline-card">
+        <h3>University of Arkansas at Little Rock</h3>
+        <p class="subtext">Master of Science in Computer and Information Sciences</p>
+        <p>January 2023 - December 2024</p>
+      </div>
+
+      <div class="timeline-card">
+        <h3>Sphoorthy Engineering College</h3>
+        <p class="subtext">Bachelor of Technology in Computer Science and Engineering</p>
+        <p>June 2018 - July 2022</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="content-section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-layout">
+        <div class="skills-card">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Next.js</li>
+          </ul>
+        </div>
+
+        <div class="skills-card">
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>API Integration</li>
+          </ul>
+        </div>
+
+        <div class="skills-card">
+          <h3>Database and Data</h3>
+          <ul>
+            <li>SQL</li>
+            <li>PostgreSQL</li>
+            <li>Amazon QuickSight</li>
+            <li>Reporting Dashboards</li>
+          </ul>
+        </div>
+
+        <div class="skills-card">
+          <h3>Cloud and Tools</h3>
+          <ul>
+            <li>AWS</li>
+            <li>Postman API</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Vercel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications" class="content-section alt-section">
+    <div class="container">
+      <h2 class="section-title">Certifications and Workshops</h2>
+
+      <div class="cert-grid">
+        <div class="cert-card">
+          <h3>Snowflake Data Warehousing Workshop</h3>
+          <p>Snowflake</p>
+          <p>Issued Dec 2025</p>
+        </div>
+
+        <div class="cert-card">
+          <h3>AWS Academy Cloud Foundations</h3>
+          <p>AWS Academy MATES</p>
+          <p>Issued Mar 2021</p>
+        </div>
+
+        <div class="cert-card">
+          <h3>Introduction to Artificial Intelligence</h3>
+          <p>Coursera</p>
+          <p>Issued Sep 2020</p>
+        </div>
+
+        <div class="cert-card">
+          <h3>Cisco Network Academy</h3>
+          <p>Cisco</p>
+          <p>Issued May 2019</p>
+        </div>
+
+        <div class="cert-card">
+          <h3>Android Development</h3>
+          <p>Kotlin Developers For Hire</p>
+          <p>Issued Mar 2021</p>
+        </div>
+
+        <div class="cert-card">
+          <h3>Python for Data Science and AI</h3>
+          <p>IBM</p>
+          <p>Issued Jul 2020</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About me -->
+  <section class="content-section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="content-card">
+        <p>
+          I enjoy building applications that are practical, readable, and useful in real work environments.
+          I like understanding how people use systems, improving user experience, and making tools feel more
+          natural and efficient.
+        </p>
+        <p>
+          Outside of development, I enjoy continuous learning, exploring new technologies, and building
+          skills that connect software, data, and professional growth.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="content-section alt-section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-card">
+        <p><strong>Email:</strong> <a href="mailto:varshachoppari98@gmail.com">varshachoppari98@gmail.com</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/vchoppari26" target="_blank">github.com/vchoppari26</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/varsha-choppari-a85712328" target="_blank">linkedin.com/in/varsha-choppari-a85712328</a></p>
+        <p><strong>Location:</strong> Little Rock, Arkansas, United States</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Varsha Choppari | Portfolio v2</p>
+    </div>
+  </footer>
+</body>
+</html>
